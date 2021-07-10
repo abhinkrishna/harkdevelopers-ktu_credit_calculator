@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/harkdevelopers-ktu_credit_calculator/static/css/main.0260fdda.chunk.css",
+    "main.js": "/harkdevelopers-ktu_credit_calculator/static/js/main.52f8d297.chunk.js",
+    "main.js.map": "/harkdevelopers-ktu_credit_calculator/static/js/main.52f8d297.chunk.js.map",
+    "runtime-main.js": "/harkdevelopers-ktu_credit_calculator/static/js/runtime-main.aa3ebd28.js",
+    "runtime-main.js.map": "/harkdevelopers-ktu_credit_calculator/static/js/runtime-main.aa3ebd28.js.map",
+    "static/js/2.efdadd83.chunk.js": "/harkdevelopers-ktu_credit_calculator/static/js/2.efdadd83.chunk.js",
+    "static/js/2.efdadd83.chunk.js.map": "/harkdevelopers-ktu_credit_calculator/static/js/2.efdadd83.chunk.js.map",
+    "index.html": "/harkdevelopers-ktu_credit_calculator/index.html",
+    "static/css/main.0260fdda.chunk.css.map": "/harkdevelopers-ktu_credit_calculator/static/css/main.0260fdda.chunk.css.map",
+    "static/js/2.efdadd83.chunk.js.LICENSE.txt": "/harkdevelopers-ktu_credit_calculator/static/js/2.efdadd83.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa3ebd28.js",
+    "static/js/2.efdadd83.chunk.js",
+    "static/css/main.0260fdda.chunk.css",
+    "static/js/main.52f8d297.chunk.js"
+  ]
+}
