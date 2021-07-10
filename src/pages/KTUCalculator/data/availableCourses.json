@@ -1,0 +1,26 @@
+[
+    {
+        "id": "cse",
+        "name": "Computer Science and Engineering"
+    },
+    {
+        "id": "me",
+        "name": "Mechanical Engineering"
+    },
+    {
+        "id": "ece",
+        "name": "Electronics and Communication Engineering"
+    },
+    {
+        "id": "eee",
+        "name": "Electrical and Electronics Engineering"
+    },
+    {
+        "id": "ce",
+        "name": "Civil Engineering"
+    },
+    {
+        "id": "bte",
+        "name": "Bio Technology and Engineering"
+    }
+]
