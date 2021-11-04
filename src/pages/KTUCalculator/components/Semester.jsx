@@ -38,11 +38,19 @@ class Semester extends Component {
 
         if ( labs ) subjectList.push(<LabRow key={`lab-s${this.state.semester}`} maxLabCredit={labs} onChange={this.setLabCredit}/>)  
 
+        const pullPassId = `S${this.props.semester}-full-pass-checkbox`;
+
         return (
             <div>
                 <div className="row">
                     <div className="col">
                         <h4>S{this.props.semester}</h4>
+                    </div>
+                    <div className="col d-flex justify-content-end">
+                        <div className="form-check form-switch">
+                            <label className="form-check-label" for={pullPassId}>Full Pass</label>
+                            <input className="form-check-input" type="checkbox" id={pullPassId}/>
+                        </div>
                     </div>
                 </div>
                 <div className="row">
