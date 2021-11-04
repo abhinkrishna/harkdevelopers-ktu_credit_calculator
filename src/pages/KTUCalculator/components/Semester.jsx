@@ -10,12 +10,22 @@ class Semester extends Component {
         this.state = {
             semester: this.props.semester,
             credits: 0,
+            labCredit: 0,
+            totalCredit: 0,
             maxCredit: this.props.subjects.reduce((credits, subject) =>  credits + subject.credit, 0) + (this.props.labs ?? 0),
         }
     }
 
+    updateTotalCredit = () => {
+        this.setState({totalCredit: this.state.credits + this.state.labCredit});
+    }
+
     handleSelection = (credit) => {
-        this.setState({credits: this.state.credits + Number(credit)})
+        this.setState({credits: this.state.credits + Number(credit)}, () => this.updateTotalCredit());
+    }
+    
+    setLabCredit = (credit) => {
+        this.setState({labCredit: Number(credit)}, () => this.updateTotalCredit())
     }
 
     render() {
@@ -26,7 +36,7 @@ class Semester extends Component {
             return <SubjectRow key={`${subject.id}${index}`} index={index} subject={subject} onChange={this.handleSelection}/>
         })
 
-        if ( labs ) subjectList.push(<LabRow key={`lab-s${this.state.semester}`} maxLabCredit={labs}/>)  
+        if ( labs ) subjectList.push(<LabRow key={`lab-s${this.state.semester}`} maxLabCredit={labs} onChange={this.setLabCredit}/>)  
 
         return (
             <div>
@@ -53,7 +63,7 @@ class Semester extends Component {
                                 <tr className="text-center">
                                     <th colSpan="2" className="text-start">Total Credits</th>
                                     <td> {this.state.maxCredit} </td>
-                                    <td> <b>{this.state.credits}</b> </td>
+                                    <td> <b>{this.state.totalCredit}</b> </td>
                                 </tr>
                             </tfoot> 
                         </table>

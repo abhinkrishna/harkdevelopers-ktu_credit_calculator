@@ -1,15 +1,17 @@
 import React, {useState} from 'react'
 
-function LabRow({ maxLabCredit }) {
+function LabRow({ maxLabCredit, onChange }) {
 
     const [credit, setCredit] = useState(0);
 
     const setValue = (event) => {
         setCredit(Number(event.target.value));
+        onChange(Number(event.target.value));
     }
 
     const setDefaultCredit = () => {
         setCredit(maxLabCredit);
+        onChange(maxLabCredit);
     }
     
     const options = [];
